@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   # generally (you would need to import <SonarKit/FBDefines/FBMacros.h>)
   spec.subspec 'FBDefines' do |ss|
     ss.header_dir = 'FBDefines'
-    ss.header_mappings_dir = 'FBDefines'
+    ss.module_name = 'FBDefines'
     ss.compiler_flags = folly_compiler_flags
     ss.source_files = 'iOS/FBDefines/**/*.h'
     ss.public_header_files = 'iOS/FBDefines/**/*.h'
